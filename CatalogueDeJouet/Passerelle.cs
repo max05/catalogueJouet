@@ -9,8 +9,10 @@ using System.Data.SqlClient;
 
 namespace CatalogueDeJouet
 {
+    
     class Passerelle
     {
+        static SqlConnection Connection;
         /// <summary>
         /// Fais la connexion
         /// </summary>
@@ -21,7 +23,7 @@ namespace CatalogueDeJouet
         {
             bool valide = false;
 
-            SqlDataReader resultat = connexion("Select nom,motDePasse From Employe");
+            SqlDataReader resultat = connexion("Select login,mdp From Login");
             while (resultat.Read())
             {
                 for (int i = 0; i < resultat.FieldCount; i++)
@@ -35,18 +37,19 @@ namespace CatalogueDeJouet
             {
                 valide = true;
             }
+            Connection.Close();  
             return valide;
         }
         static public SqlDataReader connexion(string pRequete)
         {
             SqlDataReader reader;
-            SqlConnection Connection = new SqlConnection("Database=win-921c8fktgae.hopitalPPEPoulmaneWanDebruyckere;Data Source=localhost;User Id=debruyckere;Password=debruyckere");
+             Connection = new SqlConnection("Database=hopitalPPEPoulmaneWanDebruyckere;Data Source=win-921c8fktgae;User Id=debruyckere;Password=debruyckere");
             
                 
                 Connection.Open();                      // ouverture de la connection
                 SqlCommand MyCommand = new SqlCommand(pRequete, Connection);
-                reader = MyCommand.ExecuteReader();     
-                Connection.Close();                     // fermeture de la connection
+                reader = MyCommand.ExecuteReader();
+                                   // fermeture de la connection
             
             return reader;  
         }
@@ -59,7 +62,7 @@ namespace CatalogueDeJouet
             CatalogueJouetPoulmane.TrancheAge tranche= new TrancheAge(1,5,8);
             CatalogueJouetPoulmane.Jouet jouet = new CatalogueJouetPoulmane.Jouet(1,"bull",categ,tranche);
             jouets.Add(jouet);
-
+            Connection.Close();  
             return jouets;
         }
 

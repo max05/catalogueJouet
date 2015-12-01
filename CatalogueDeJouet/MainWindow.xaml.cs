@@ -65,5 +65,7 @@ namespace CatalogueDeJouet
         private void TBPassword_TextChanged(object sender, TextChangedEventArgs e)
         {
         }
+
+        
     }
 }
