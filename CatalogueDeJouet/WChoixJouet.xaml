@@ -1,0 +1,15 @@
+﻿<Window x:Class="CatalogueDeJouet.WChoixJouet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Choix des Jouets" Height="400" Width="500">
+    <Grid RenderTransformOrigin="0.496,0.495">
+        <Label x:Name="LSubTitle" Content="Choisissez les jouets" HorizontalAlignment="Left" Height="28" Margin="10,0,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label x:Name="LRappel" Content="Rappel: UN jouet pour chaque enfant" HorizontalAlignment="Left" Height="27" Margin="10,33,0,0" VerticalAlignment="Top" Width="213"/>
+        <Label x:Name="LNomEnfant" Content="Pour: " HorizontalAlignment="Left" Height="29" Margin="10,97,0,0" VerticalAlignment="Top" Width="160"/>
+        <ComboBox x:Name="CBChoixJouet" HorizontalAlignment="Left" Height="31" Margin="79,136,0,0" VerticalAlignment="Top" Width="195" SelectionChanged="CBChoixJouet_SelectionChanged"/>
+        <Label x:Name="lJouet" Content="Jouet:" HorizontalAlignment="Left" Height="31" Margin="10,136,0,0" VerticalAlignment="Top" Width="52"/>
+        <Button x:Name="bValider" Content="Valider et passer au suivant" HorizontalAlignment="Left" Height="23" Margin="62,245,0,0" VerticalAlignment="Top" Width="161" Click="bValider_Click"/>
+        <Button x:Name="bQuitter" Content="Quitter" HorizontalAlignment="Left" Height="21" Margin="62,284,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click"/>
+
+    </Grid>
+</Window>
