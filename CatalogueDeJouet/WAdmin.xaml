@@ -1,0 +1,24 @@
+﻿<Window x:Class="CatalogueDeJouet.WAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WAdmin" Height="343" Width="402">
+    <Grid>
+        <Grid x:Name="GCommande" Height="266" Margin="10,37,10,0" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="liFirstLine" Height="32*"/>
+                <RowDefinition x:Name="liOtherLine" Height="211*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="liEnfant" Width="59*"/>
+                <ColumnDefinition x:Name="liJouet" Width="69*"/>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition x:Name="liPère" Width="59*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="enfant" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="118"/>
+            <Label Content="jouet" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="5,0,0,0" VerticalAlignment="Top" Width="123"/>
+            <Label Content="père" Grid.Column="3" HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Top" Width="86"/>
+        </Grid>
+        <Label x:Name="lBienvenue" Content="Bienvenue Administrateur! Ce tableau récapitule les commandes passé" HorizontalAlignment="Left" Height="26" Margin="10,6,0,0" VerticalAlignment="Top" Width="384"/>
+
+    </Grid>
+</Window>

@@ -25,7 +25,10 @@ namespace CatalogueDeJouet
 
             return reader;
         }
-        
+         public void closeConnection()
+         {
+             Connection.Close();
+         }
         /*public abstract Boolean create(T unObjet);
         
         public abstract T find(int id);

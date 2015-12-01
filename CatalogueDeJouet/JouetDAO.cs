@@ -29,7 +29,7 @@ namespace CatalogueDeJouet
             CatalogueJouetPoulmane.TrancheAge tranche = new TrancheAge(1, 5, 8);
             CatalogueJouetPoulmane.Jouet jouet = new CatalogueJouetPoulmane.Jouet(1, "bull", categ, tranche);
             jouets.Add(jouet);
-
+            this.closeConnection();
             return jouets;
         }
 
