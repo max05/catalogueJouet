@@ -11,17 +11,28 @@ namespace CatalogueDeJouet
 {
     class JouetDAO : DAO<CatalogueJouetPoulmane.Jouet>
     {
+        /// <summary>
+        /// Recupère tout les jouets présent dans la base de données
+        /// </summary>
+        /// <returns></returns>
        override public ArrayList findAll()
         {
             ArrayList jouets = new ArrayList();
+            CatalogueJouetPoulmane.Categorie laCategorie;
+            CatalogueJouetPoulmane.TrancheAge laTranche;
+            CatalogueJouetPoulmane.Jouet unJouet;
 
-            SqlDataReader resultat = this.connexion("SELECT * FROM jouet ORDER BY id");
+            SqlDataReader resultat = this.connexion("SELECT c.libelle,j.jouet,t.ageMin,t.ageMax FROM jouet j join Categorie c on c.idCategorie=j.idCategorie join TrancheAge t on j.idTrancheAge=t.idTrancheAge ORDER BY id");
             while (resultat.Read())
             {
                 for (int i = 0; i < resultat.FieldCount; i++)
                 {
-
-                    //lRes.Text += resultat.GetSqlValue(i).ToString().Trim() + "<br />";
+                   // string titre = Convert.ToString(resultat.GetValue(i));
+                   // ((string)resultat["c.libelle"])
+                    laCategorie = new Categorie(i, ((string)resultat["c.libelle"]));
+                    laTranche = new TrancheAge(i,((int)resultat["t.ageMin"]),((int)resultat["t.ageMax"]));
+                    unJouet = new Jouet(i, ((string)resultat["j.jouet"]), laCategorie, laTranche);
+                    jouets.Add(unJouet);
                 }
             }
 
