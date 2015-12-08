@@ -35,3 +35,6 @@ H:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\WAd
 F:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.exe.config
 F:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.exe
 F:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.pdb
+C:\Users\SIO1\Documents\Visual Studio 2010\catalogueJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.exe.config
+C:\Users\SIO1\Documents\Visual Studio 2010\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.exe
+C:\Users\SIO1\Documents\Visual Studio 2010\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.pdb
