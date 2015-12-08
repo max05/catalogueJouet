@@ -30,3 +30,8 @@ H:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\Cat
 H:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.Properties.Resources.resources
 H:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.csproj.GenerateResource.Cache
 H:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\bin\Debug\CatalogueJouetPoulmane.dll
+H:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\WAdmin.baml
+H:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\WAdmin.g.cs
+F:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.exe.config
+F:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.exe
+F:\Travail\PPE SIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.pdb

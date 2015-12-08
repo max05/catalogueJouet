@@ -15,25 +15,26 @@ namespace CatalogueDeJouet
         /// Recupère tout les jouets présent dans la base de données
         /// </summary>
         /// <returns></returns>
-       override public ArrayList findAll()
+        public override ArrayList findAll()
         {
             ArrayList jouets = new ArrayList();
             CatalogueJouetPoulmane.Categorie laCategorie;
             CatalogueJouetPoulmane.TrancheAge laTranche;
             CatalogueJouetPoulmane.Jouet unJouet;
 
-            SqlDataReader resultat = this.connexion("SELECT c.libelle,j.jouet,t.ageMin,t.ageMax FROM jouet j join Categorie c on c.idCategorie=j.idCategorie join TrancheAge t on j.idTrancheAge=t.idTrancheAge ORDER BY id");
+            SqlDataReader resultat = this.connexion("SELECT c.libelle as catLib,j.libelle as jouetLib,t.ageMin as ageMin,t.ageMax as ageMax FROM jouet j join Categorie c on c.idCategorie=j.idCategorie join TrancheAge t on j.idTrancheAge=t.idTrancheAge ORDER BY j.libelle");
             while (resultat.Read())
             {
-                for (int i = 0; i < resultat.FieldCount; i++)
-                {
+                int i = 0;
+                /*for (int i = 0; i < resultat.FieldCount; i++)
+                {*/
                    // string titre = Convert.ToString(resultat.GetValue(i));
                    // ((string)resultat["c.libelle"])
-                    laCategorie = new Categorie(i, ((string)resultat["c.libelle"]));
-                    laTranche = new TrancheAge(i,((int)resultat["t.ageMin"]),((int)resultat["t.ageMax"]));
-                    unJouet = new Jouet(i, ((string)resultat["j.jouet"]), laCategorie, laTranche);
+                    laCategorie = new Categorie(i, ((string)resultat["catLib"]));
+                    laTranche = new TrancheAge(i,((int)resultat["ageMin"]),((int)resultat["ageMax"]));
+                    unJouet = new Jouet(i, ((string)resultat["jouetLib"]), laCategorie, laTranche);
                     jouets.Add(unJouet);
-                }
+                //}
             }
 
             CatalogueJouetPoulmane.Categorie categ = new Categorie(1, "test");

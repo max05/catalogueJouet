@@ -21,12 +21,11 @@ namespace CatalogueDeJouet
     /// </summary>
     public partial class WChoixJouet : Window
     {
-        int nbEnfant = 2;
-        int enfantActuel = 1;
+        JouetDAO classJouet = new JouetDAO();
         public WChoixJouet()
         {
             InitializeComponent();
-            ArrayList listeJouets= Passerelle.lesJouets();
+            ArrayList listeJouets= classJouet.findAll() ;
             foreach (CatalogueJouetPoulmane.Jouet unjouet in listeJouets)
             {
                 CBChoixJouet.Items.Add(unjouet.getLibelle());

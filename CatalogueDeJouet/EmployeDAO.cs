@@ -22,15 +22,17 @@ namespace CatalogueDeJouet
             {
                 for (int i = 0; i < resultat.FieldCount; i++)
                 {
-                    //lRes.Text += resultat.GetSqlValue(i).ToString().Trim() + "<br />";
+                    username = (i, ((string)resultat["login"]));
+                    password = (i,((string)resultat["mdp"]));
+     
+                    if (username == pUserName && password == pPassword)
+                        {
+                            valide = true;
+                        }
                 }
             }
-            string username = "a";
-            string password = "a";
-            if (username == pUserName && password == pPassword)
-            {
-                valide = true;
-            }
+            
+            
             Connection.Close();
             return valide;
         } 
