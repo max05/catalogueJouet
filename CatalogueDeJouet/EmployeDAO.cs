@@ -9,32 +9,56 @@ using System.Data.SqlClient;
 
 namespace CatalogueDeJouet
 {
-    /*class EmployeDAO : DAO<Employe>
+    class EmployeDAO : DAO<Employe>
     {
-        //CRUD
-        public override System.Collections.ArrayList findAll(string pUserName, string pPassword)
+        Employe unEmploye ;
+        string username;
+        public  Employe findlogin(string pUserName, string pPassword)
         {
-            throw new NotImplementedException();
-            bool valide = false;
+            Employe lEmploye=null;
+            
 
             SqlDataReader resultat = connexion("Select login,mdp From Login");
+            int i=0;
             while (resultat.Read())
             {
-                for (int i = 0; i < resultat.FieldCount; i++)
-                {
-                    username = (i, ((string)resultat["login"]));
-                    password = (i,((string)resultat["mdp"]));
+                 unEmploye= new Employe(i,((string)resultat["login"]),((string)resultat["mdp"]));
+                    username = unEmploye.getLogin();
+                    string password = unEmploye.getMdp();
      
                     if (username == pUserName && password == pPassword)
                         {
-                            valide = true;
+                            
+                            lEmploye=findEmployer();
                         }
-                }
+                i++;
             }
             
             
-            Connection.Close();
-            return valide;
-        } 
-     }*/
+            this.closeConnection();
+            return lEmploye;
+        }
+        public Employe findEmployer()
+        {
+            SqlDataReader resultat = connexion("Select nom,prenom From employe e join Login l on l.idEmploye=e.idEmploye where login='" + username + "'");
+
+            string nom = (string)resultat["nom"];
+            string prenom = (string)resultat["prenom"];
+            unEmploye = new Employe(nom, prenom);
+            this.closeConnection();
+            return unEmploye;
+        }
+        public Employe getEmployer()
+        {
+            return unEmploye;
+        }
+        public override ArrayList findAll()
+        {
+            throw new NotImplementedException();
+        }
+        public override Employe find()
+        {
+            throw new NotImplementedException();
+        }
+     }
 }

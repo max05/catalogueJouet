@@ -31,10 +31,12 @@ namespace CatalogueDeJouet
         {
             string username=TBUser.Text;
             string password=TBPassword.Text;
-            bool valide = Passerelle.identification(username, password);
+            //bool valide = Passerelle.identification(username, password);
+            EmployeDAO DaoEmploye = new EmployeDAO();
+            Employe unEmploye = DaoEmploye.findlogin(username, password);
             try
             {
-                if (valide==true)
+                if (unEmploye != null)
                 {
                     WChoixJouet windows = new WChoixJouet();
                     windows.Show();
