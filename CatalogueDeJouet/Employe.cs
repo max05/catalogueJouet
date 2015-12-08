@@ -38,45 +38,26 @@ namespace CatalogueDeJouet
         {
             return nom;
         }
-        public void setNom(string pNom)
-        {
-            nom = pNom;
-        }
-        public void setPrenom(string pPrenom)
-        {
-            prenom = pPrenom;
-        }
-        public void setNom(string pNom)
-        {
-            nom = pNom;
-        }
-        public string getNom()
-        {
-            return nom;
-        }
-        public void setPrenom(string pPrenom)
-        {
-            prenom = pPrenom;
-        }
         public string getPrenom()
         {
             return prenom;
         }
+        public void setNom(string pNom)
+        {
+            nom = pNom;
+        }
+        public void setPrenom(string pPrenom)
+        {
+            prenom = pPrenom;
+        }
+        
         public void setLogin(string pLogin)
         {
             login = pLogin;
         }
-        public string getLogin()
-        {
-            return login;
-        }
         public void setMdp(string pMdp)
         {
             mdp = pMdp;
-        }
-        public string getMdp()
-        {
-            return mdp;
         }
     }
 }
