@@ -40,6 +40,14 @@ namespace CatalogueDeJouet
             Connection.Close();  
             return valide;
         }
+        static public SqlConnection connexionSeul()
+        {
+            Connection = new SqlConnection("Database=hopitalPPEPoulmaneWanDebruyckere;Data Source=win-921c8fktgae;User Id=debruyckere;Password=debruyckere");
+            Connection.Open();                      // ouverture de la connection
+            return Connection; ;
+            
+        }
+
         static public SqlDataReader connexion(string pRequete)
         {
             SqlDataReader reader;

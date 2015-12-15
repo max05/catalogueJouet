@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +24,13 @@ namespace CatalogueDeJouet
         public WAdmin()
         {
             InitializeComponent();
+            SqlDataAdapter adaptateur;
+            DataSet modif;
+            adaptateur = new SqlDataAdapter("select * from CommandePasser", Passerelle.connexionSeul());
+            modif = new DataSet();
+            adaptateur.Fill(modif);
+            datagrid1.ItemsSource = modif.Tables[0].DefaultView;
         }
     }
 }
+
