@@ -4,16 +4,33 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\Sio2\Desktop\ppe\catalogueJouet\CatalogueDeJouet\obj\Debug\
+=======
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\
+>>>>>>> f27ad4bb13b9e5fcf7ed797f8cee29f5fbf91566
 CatalogueDeJouet
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\Sio2\Desktop\ppe\catalogueJouet\CatalogueDeJouet\App.xaml
+=======
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\App.xaml
+>>>>>>> f27ad4bb13b9e5fcf7ed797f8cee29f5fbf91566
 3739541784
 1-802292255
+<<<<<<< HEAD
+121319176420
+13-2088426024
+=======
 14923249004
+<<<<<<< HEAD
 13-169805306
+=======
+13-1872711035
+>>>>>>> 6f0148af3d0b99d11a66642367c88c8b272939a4
+>>>>>>> f27ad4bb13b9e5fcf7ed797f8cee29f5fbf91566
 MainWindow.xaml;WAdmin.xaml;WChoixJouet.xaml;
 
 False
