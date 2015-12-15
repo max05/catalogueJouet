@@ -12,8 +12,13 @@ DEBUG;TRACE
 C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\App.xaml
 3739541784
 1-802292255
+<<<<<<< HEAD
 18-1849016717
 13-2088426024
+=======
+181248636440
+13-1872711035
+>>>>>>> 6f0148af3d0b99d11a66642367c88c8b272939a4
 MainWindow.xaml;WAdmin.xaml;WChoixJouet.xaml;
 
 False

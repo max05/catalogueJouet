@@ -15,18 +15,19 @@ namespace CatalogueDeJouet
         private string mdp;
         private bool admin;
 
-        public Employe(int pid,string pNom, string pPrenom)
+        public Employe(int pid,string pNom, string pPrenom,bool pAdmin)
         {
             id = pid;
             nom = pNom;
             prenom = pPrenom;
+            admin = pAdmin;
         }
-        /*public Employe(int pid, string pLogin, string pMdp)
+        public Employe(string pLogin, string pMdp)
         {
-            id = pid;
             login = pLogin;
             mdp = pMdp;
-        }*/
+            
+        }
         public string getLogin()
         {
             return login;
@@ -59,6 +60,10 @@ namespace CatalogueDeJouet
         public void setMdp(string pMdp)
         {
             mdp = pMdp;
+        }
+        public bool getAdmin()
+        {
+            return admin;
         }
     }
 }

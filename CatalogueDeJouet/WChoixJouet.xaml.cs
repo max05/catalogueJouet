@@ -22,18 +22,20 @@ namespace CatalogueDeJouet
     public partial class WChoixJouet : Window
     {
         JouetDAO classJouet = new JouetDAO();
+        int i = 0;
+        ArrayList lesEnfants=new ArrayList();
         public WChoixJouet()
         {
             InitializeComponent();
             EmployeDAO employDAO=new EmployeDAO();
             Employe unEmployer = employDAO.find(1);
-            LSubTitle.Content += ". M. " + unEmployer.getNom();
+            LSubTitle.Content += " M. " + unEmployer.getNom();
             ArrayList listeJouets= classJouet.findAll() ;
             foreach (CatalogueJouetPoulmane.Jouet unjouet in listeJouets)
             {
                 CBChoixJouet.Items.Add(unjouet.getLibelle());
             }
-            
+            //lesEnfants;
         }
 
         private void CBChoixJouet_SelectionChanged(object sender, SelectionChangedEventArgs e)

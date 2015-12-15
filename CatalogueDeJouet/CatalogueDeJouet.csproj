@@ -59,6 +59,8 @@
     <Compile Include="DAO.cs" />
     <Compile Include="Employe.cs" />
     <Compile Include="EmployeDAO.cs" />
+    <Compile Include="Enfant.cs" />
+    <Compile Include="EnfantDAO.cs" />
     <Compile Include="JouetDAO.cs" />
     <Compile Include="Passerelle.cs" />
     <Compile Include="WAdmin.xaml.cs">
