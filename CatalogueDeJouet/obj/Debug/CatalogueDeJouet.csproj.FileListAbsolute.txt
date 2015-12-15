@@ -57,3 +57,22 @@ H:\Travail\PPESIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\obj\Debug\Cata
 H:\Travail\PPESIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.exe
 H:\Travail\PPESIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.pdb
 H:\Travail\PPESIO2\hôpitalAppli\PPEHopitalJouet\CatalogueDeJouet\bin\Debug\CatalogueJouetPoulmane.dll
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.exe.config
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.exe
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.pdb
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.exe
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\bin\Debug\CatalogueDeJouet.pdb
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\bin\Debug\CatalogueJouetPoulmane.dll
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.csprojResolveAssemblyReference.cache
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\MainWindow.baml
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\WAdmin.baml
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\WChoixJouet.baml
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\MainWindow.g.cs
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\WAdmin.g.cs
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\WChoixJouet.g.cs
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\App.g.cs
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet_Content.g.cs
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet_MarkupCompile.cache
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.g.resources
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.Properties.Resources.resources
+C:\Users\SIO1_2\Documents\Visual Studio 2013\Projects\catalogueJouet\CatalogueDeJouet\obj\Debug\CatalogueDeJouet.csproj.GenerateResource.Cache
