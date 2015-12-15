@@ -15,17 +15,18 @@ namespace CatalogueDeJouet
         private string mdp;
         private bool admin;
 
-        public Employe(string pNom, string pPrenom)
+        public Employe(int pid,string pNom, string pPrenom)
         {
+            id = pid;
             nom = pNom;
             prenom = pPrenom;
         }
-        public Employe(int pid, string pLogin, string pMdp)
+        /*public Employe(int pid, string pLogin, string pMdp)
         {
             id = pid;
             login = pLogin;
             mdp = pMdp;
-        }
+        }*/
         public string getLogin()
         {
             return login;

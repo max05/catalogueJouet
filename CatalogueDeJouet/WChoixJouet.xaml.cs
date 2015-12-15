@@ -25,6 +25,9 @@ namespace CatalogueDeJouet
         public WChoixJouet()
         {
             InitializeComponent();
+            EmployeDAO employDAO=new EmployeDAO();
+            Employe unEmployer = employDAO.find(1);
+            LSubTitle.Content += ". M. " + unEmployer.getNom();
             ArrayList listeJouets= classJouet.findAll() ;
             foreach (CatalogueJouetPoulmane.Jouet unjouet in listeJouets)
             {

@@ -34,7 +34,7 @@ namespace CatalogueDeJouet
             this.closeConnection();
             return jouets;
         }
-        public override Jouet find()
+        public override Jouet find(int id)
         {
             throw new NotImplementedException();
         }

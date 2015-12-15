@@ -29,11 +29,11 @@ namespace CatalogueDeJouet
          {
              Connection.Close();
          }
-        /*public abstract Boolean create(T unObjet);
+        /*public abstract Boolean create(T unObjet);*/
         
         public abstract T find(int id);
 
-        public abstract Boolean update(T unObjet);
+        /*public abstract Boolean update(T unObjet);
 
         public abstract Boolean delete(T unObjet);*/
 
