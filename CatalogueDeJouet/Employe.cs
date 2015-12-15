@@ -21,12 +21,11 @@ namespace CatalogueDeJouet
             nom = pNom;
             prenom = pPrenom;
         }
-        /*public Employe(int pid, string pLogin, string pMdp)
+        public Employe(string pLogin, string pMdp)
         {
-            id = pid;
             login = pLogin;
             mdp = pMdp;
-        }*/
+        }
         public string getLogin()
         {
             return login;

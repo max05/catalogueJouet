@@ -22,7 +22,7 @@ namespace CatalogueDeJouet
             int i=0;
             while (resultat.Read())
             {
-                 unEmploye= new Employe(i,((string)resultat["login"]),((string)resultat["mdp"]));
+                 unEmploye= new Employe(((string)resultat["login"]),((string)resultat["mdp"]));
                     username = unEmploye.getLogin();
                     string password = unEmploye.getMdp();
      
@@ -61,7 +61,7 @@ namespace CatalogueDeJouet
         }
         public override Employe find(int id)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
             SqlDataReader resultat = connexion("Select nom,prenom From employe e where idEmploye='" + id + "'");
             while (resultat.Read())
             {
