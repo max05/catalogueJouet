@@ -40,13 +40,14 @@ namespace CatalogueDeJouet
         }
         public Employe findEmployer()
         {
-            SqlDataReader resultat = connexion("Select l.idEmploye,nom,prenom From employe e join Login l on l.idEmploye=e.idEmploye where login='" + username + "'");
+            SqlDataReader resultat = connexion("Select l.idEmploye,nom,prenom,admin From employe e join Login l on l.idEmploye=e.idEmploye where login='" + username + "'");
             while (resultat.Read())
             {
                 int id = (int)resultat["idEmploye"];
                 string nom = (string)resultat["nom"];
                 string prenom = (string)resultat["prenom"];
-                unEmploye = new Employe(id,nom, prenom);
+                bool admin = (bool)resultat["admin"];
+                unEmploye = new Employe(id,nom, prenom, admin);
             }
             this.closeConnection();
             return unEmploye;
@@ -62,12 +63,13 @@ namespace CatalogueDeJouet
         public override Employe find(int id)
         {
             //throw new NotImplementedException();
-            SqlDataReader resultat = connexion("Select nom,prenom From employe e where idEmploye='" + id + "'");
+            SqlDataReader resultat = connexion("Select nom,prenom,admin From employe e where idEmploye='" + id + "'");
             while (resultat.Read())
             {
                 string nom = (string)resultat["nom"];
                 string prenom = (string)resultat["prenom"];
-                unEmploye = new Employe(id,nom, prenom);
+                bool admin = (bool)resultat["admin"];
+                unEmploye = new Employe(id, nom, prenom, admin);
             }
             this.closeConnection();
             return unEmploye;

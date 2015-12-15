@@ -34,12 +34,21 @@ namespace CatalogueDeJouet
             //bool valide = Passerelle.identification(username, password);
             EmployeDAO DaoEmploye = new EmployeDAO();
             Employe unEmploye = DaoEmploye.findlogin(username, password);
+            bool admin=unEmploye.getAdmin();
             try
             {
                 if (unEmploye != null)
                 {
-                    WChoixJouet windows = new WChoixJouet();
-                    windows.Show();
+                    if (admin == true)
+                    {
+                        WAdmin windows=new WAdmin();
+                        windows.Show();
+                    }
+                    else
+                    {
+                        WChoixJouet windows = new WChoixJouet();
+                        windows.Show();
+                    }
                     this.Close();
                 }
                 else
