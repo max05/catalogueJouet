@@ -23,6 +23,7 @@ namespace CatalogueDeJouet
     {
         public WAdmin()
         {
+
             InitializeComponent();
             SqlDataAdapter adaptateur;
             DataSet modif;
